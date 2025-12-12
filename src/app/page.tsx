@@ -53,9 +53,12 @@ export default function Home() {
           <button className="bg-black border-y border-r border-white/20 px-4 py-2 text-sm text-white hover:bg-white/10 transition-colors tracking-[0.05em]">
             Login
           </button>
-          <button className="bg-[#002BFF] border border-[#002BFF] px-4 py-2 text-sm text-white hover:bg-[#0022cc] transition-colors tracking-[0.05em]">
+          <Link 
+            href="/signup" 
+            className="bg-[#002BFF] border border-[#002BFF] px-4 py-2 text-sm text-white hover:bg-[#0022cc] transition-colors tracking-[0.05em]"
+          >
             Sign up
-          </button>
+          </Link>
         </div>
       </nav>
 
