@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Jost, Space_Grotesk, Nothing_You_Could_Do } from "next/font/google";
+import { Jost, Space_Grotesk, Nothing_You_Could_Do, Geist } from "next/font/google";
 import "./globals.css";
 import { VisualEditsMessenger } from "orchids-visual-edits";
 
@@ -13,6 +13,11 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
   subsets: ["latin"],
   weight: ["400"],
+});
+
+const geist = Geist({
+  variable: "--font-geist",
+  subsets: ["latin"],
 });
 
 const nothingYouCouldDo = Nothing_You_Could_Do({
@@ -34,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${jost.variable} ${spaceGrotesk.variable} ${nothingYouCouldDo.variable} antialiased`}
+        className={`${jost.variable} ${spaceGrotesk.variable} ${nothingYouCouldDo.variable} ${geist.variable} antialiased`}
         style={{ fontFamily: "var(--font-jost), sans-serif" }}
       >
         {children}

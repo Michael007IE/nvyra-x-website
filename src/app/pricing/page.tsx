@@ -8,21 +8,15 @@ export default function PricingPage() {
   return (
     <div className="relative min-h-screen w-full bg-black text-white font-[family-name:var(--font-jost)] overflow-x-hidden selection:bg-blue-500/30">
       {/* Background Effect - Blue Nebula */}
-      <div 
-        className="absolute top-0 left-0 right-0 h-[800px] z-0 pointer-events-none"
-        style={{
-          background: 'radial-gradient(circle at 50% 0%, rgba(0, 43, 255, 0.4) 0%, rgba(0, 0, 0, 0) 70%)',
-          filter: 'blur(60px)',
-        }}
-      />
-      <div 
-        className="absolute top-[-10%] left-[20%] right-[20%] h-[500px] z-0 pointer-events-none opacity-60"
-        style={{
-          background: 'radial-gradient(ellipse at center, #002BFF 0%, transparent 70%)',
-          filter: 'blur(100px)',
-          transform: 'rotate(-10deg)',
-        }}
-      />
+      <div className="absolute top-0 left-0 right-0 h-[800px] z-0 pointer-events-none">
+        <Image
+          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/image-1765571908582.png?width=8000&height=8000&resize=contain"
+          alt="Pricing Background"
+          fill
+          className="object-cover object-top opacity-100"
+          priority
+        />
+      </div>
       
       {/* Navbar */}
       <nav className="relative z-20 flex items-center justify-between px-6 py-6 max-w-[1440px] mx-auto w-full">
@@ -98,30 +92,30 @@ export default function PricingPage() {
                 <CircleDashed className="w-7 h-7 text-white" strokeWidth={1.5} />
               </div>
               <h2 className="text-4xl font-normal mb-6 font-[family-name:var(--font-jost)]">Standard</h2>
-              <p className="text-white/70 text-[15px] leading-relaxed h-20 font-light">
+              <p className="text-white/70 text-[18.2px] font-[family-name:var(--font-geist)] leading-relaxed h-20 font-normal">
                 Best for small, fast-moving teams, essential<br />tools to unlock growth.
               </p>
             </div>
 
             <div className="mb-10">
               <div className="flex items-baseline gap-1">
-                <span className="text-4xl font-bold font-[family-name:var(--font-space-grotesk)]">€0</span>
-                <span className="text-white/60 text-base font-light ml-1">/month</span>
+                <span className="text-[27.17px] font-semibold font-[family-name:var(--font-geist)]">€0</span>
+                <span className="text-white/80 text-[18.12px] font-semibold font-[family-name:var(--font-geist)] ml-1">/month</span>
               </div>
             </div>
 
             <div className="flex-grow space-y-5 mb-14">
               <div className="flex items-start gap-4">
                 <Check className="w-5 h-5 text-white mt-0.5 shrink-0" strokeWidth={1.5} />
-                <span className="text-[15px] font-light text-white/90">Access to Basic Models</span>
+                <span className="text-[16.98px] font-normal font-[family-name:var(--font-geist)] text-white/90">Access to Basic Models</span>
               </div>
               <div className="flex items-start gap-4">
                 <Check className="w-5 h-5 text-white mt-0.5 shrink-0" strokeWidth={1.5} />
-                <span className="text-[15px] font-light text-white/90">No credit card required</span>
+                <span className="text-[16.98px] font-normal font-[family-name:var(--font-geist)] text-white/90">No credit card required</span>
               </div>
             </div>
 
-            <button className="w-[180px] h-[48px] rounded-full bg-[#1A1A1A] border border-[#333] hover:bg-[#252525] hover:border-white/20 transition-all text-sm font-normal text-white/90 mx-auto md:mx-0 mt-auto">
+            <button className="w-[204px] h-[48px] rounded-full bg-white/10 shadow-[inset_4.5px_5.7px_6.8px_rgba(255,255,255,0.4)] flex items-center justify-center transition-all text-[16.98px] font-normal font-[family-name:var(--font-geist)] text-white mx-auto md:mx-0 mt-auto hover:bg-white/20">
               Get started
             </button>
           </div>
@@ -140,34 +134,34 @@ export default function PricingPage() {
                 <Zap className="w-7 h-7 text-white" strokeWidth={1.5} />
               </div>
               <h2 className="text-4xl font-normal mb-6 font-[family-name:var(--font-jost)]">Pro</h2>
-              <p className="text-white/70 text-[15px] leading-relaxed h-20 font-light">
+              <p className="text-white/70 text-[18.2px] font-[family-name:var(--font-geist)] leading-relaxed h-20 font-normal">
                 Ideal for growing businesses, access advanced<br />AI models, API integrations, and priority<br />support.
               </p>
             </div>
 
             <div className="mb-10">
               <div className="flex items-baseline gap-1">
-                <span className="text-4xl font-bold font-[family-name:var(--font-space-grotesk)]">€9</span>
-                <span className="text-white/60 text-base font-light ml-1">/month</span>
+                <span className="text-[27.17px] font-semibold font-[family-name:var(--font-geist)]">€9</span>
+                <span className="text-white/80 text-[18.12px] font-semibold font-[family-name:var(--font-geist)] ml-1">/month</span>
               </div>
             </div>
 
             <div className="flex-grow space-y-5 mb-14">
               <div className="flex items-start gap-4">
                 <Check className="w-5 h-5 text-white mt-0.5 shrink-0" strokeWidth={1.5} />
-                <span className="text-[15px] font-light text-white/90">3x Usage of Free Tier</span>
+                <span className="text-[16.98px] font-normal font-[family-name:var(--font-geist)] text-white/90">3x Usage of Free Tier</span>
               </div>
               <div className="flex items-start gap-4">
                 <Check className="w-5 h-5 text-white mt-0.5 shrink-0" strokeWidth={1.5} />
-                <span className="text-[15px] font-light text-white/90">Acess to our most advanced models</span>
+                <span className="text-[16.98px] font-normal font-[family-name:var(--font-geist)] text-white/90">Acess to our most advanced models</span>
               </div>
               <div className="flex items-start gap-4">
                 <Check className="w-5 h-5 text-white mt-0.5 shrink-0" strokeWidth={1.5} />
-                <span className="text-[15px] font-light text-white/90">Limited <span className="opacity-50 italic">beta</span> access to Velora</span>
+                <span className="text-[16.98px] font-normal font-[family-name:var(--font-geist)] text-white/90">Limited <span className="opacity-50 italic">beta</span> access to Velora</span>
               </div>
             </div>
 
-            <button className="w-[180px] h-[48px] rounded-full bg-[#1A1A1A] border border-[#333] hover:bg-[#252525] hover:border-white/20 transition-all text-sm font-normal text-white/90 mx-auto md:mx-0 mt-auto">
+            <button className="w-[204px] h-[48px] rounded-full bg-white/10 shadow-[inset_4.5px_5.7px_6.8px_rgba(255,255,255,0.4)] flex items-center justify-center transition-all text-[16.98px] font-normal font-[family-name:var(--font-geist)] text-white mx-auto md:mx-0 mt-auto hover:bg-white/20">
               Get started
             </button>
           </div>
@@ -179,42 +173,42 @@ export default function PricingPage() {
                 <Diamond className="w-7 h-7 text-white" strokeWidth={1.5} />
               </div>
               <h2 className="text-4xl font-normal mb-6 font-[family-name:var(--font-jost)]">Ultra</h2>
-              <p className="text-white/70 text-[15px] leading-relaxed h-20 font-light">
+              <p className="text-white/70 text-[18.2px] font-[family-name:var(--font-geist)] leading-relaxed h-20 font-normal">
                 Built for scale, custom solutions, dedicated<br />infrastructure, and strategic AI guidance.
               </p>
             </div>
 
             <div className="mb-10">
               <div className="flex items-baseline gap-1">
-                <span className="text-4xl font-bold font-[family-name:var(--font-space-grotesk)]">€21</span>
-                <span className="text-white/60 text-base font-light ml-1">/month</span>
+                <span className="text-[27.17px] font-semibold font-[family-name:var(--font-geist)]">€21</span>
+                <span className="text-white/80 text-[18.12px] font-semibold font-[family-name:var(--font-geist)] ml-1">/month</span>
               </div>
             </div>
 
             <div className="flex-grow space-y-5 mb-14">
               <div className="flex items-start gap-4">
                 <Check className="w-5 h-5 text-white mt-0.5 shrink-0" strokeWidth={1.5} />
-                <span className="text-[15px] font-light text-white/90">12x usage of free tier</span>
+                <span className="text-[16.98px] font-normal font-[family-name:var(--font-geist)] text-white/90">12x usage of free tier</span>
               </div>
               <div className="flex items-start gap-4">
                 <Check className="w-5 h-5 text-white mt-0.5 shrink-0" strokeWidth={1.5} />
-                <span className="text-[15px] font-light text-white/90">Highest levels of access to Velora</span>
+                <span className="text-[16.98px] font-normal font-[family-name:var(--font-geist)] text-white/90">Highest levels of access to Velora</span>
               </div>
               <div className="flex items-start gap-4">
                 <Check className="w-5 h-5 text-white mt-0.5 shrink-0" strokeWidth={1.5} />
-                <span className="text-[15px] font-light text-white/90">Priority access</span>
+                <span className="text-[16.98px] font-normal font-[family-name:var(--font-geist)] text-white/90">Priority access</span>
               </div>
               <div className="flex items-start gap-4">
                 <Check className="w-5 h-5 text-white mt-0.5 shrink-0" strokeWidth={1.5} />
-                <span className="text-[15px] font-light text-white/90">Run on state of the art data center GPU's</span>
+                <span className="text-[16.98px] font-normal font-[family-name:var(--font-geist)] text-white/90">Run on state of the art data center GPU's</span>
               </div>
               <div className="flex items-start gap-4">
                 <Check className="w-5 h-5 text-white mt-0.5 shrink-0" strokeWidth={1.5} />
-                <span className="text-[15px] font-light text-white/90">Up to 53x faster than standard version</span>
+                <span className="text-[16.98px] font-normal font-[family-name:var(--font-geist)] text-white/90">Up to 53x faster than standard version</span>
               </div>
             </div>
 
-            <button className="w-[180px] h-[48px] rounded-full bg-[#1A1A1A] border border-[#333] hover:bg-[#252525] hover:border-white/20 transition-all text-sm font-normal text-white/90 mx-auto md:mx-0 mt-auto">
+            <button className="w-[204px] h-[48px] rounded-full bg-white/10 shadow-[inset_4.5px_5.7px_6.8px_rgba(255,255,255,0.4)] flex items-center justify-center transition-all text-[16.98px] font-normal font-[family-name:var(--font-geist)] text-white mx-auto md:mx-0 mt-auto hover:bg-white/20">
               Get started
             </button>
           </div>
