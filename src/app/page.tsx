@@ -16,7 +16,7 @@ export default function Home() {
       <nav className="relative z-10 flex items-center justify-between px-6 py-4">
         <div className="flex items-center gap-3">
           <Image
-            src="/nvyra-logo.png"
+            src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/image-1765567223502.png"
             alt="Nvyra X Logo"
             width={50}
             height={50}
@@ -47,13 +47,13 @@ export default function Home() {
         </div>
 
         <div className="flex items-center">
-          <button className="bg-black px-4 py-2 text-sm text-white hover:bg-white/10 transition-colors tracking-[0.05em]">
+          <button className="bg-black border border-white/20 px-4 py-2 text-sm text-white hover:bg-white/10 transition-colors tracking-[0.05em]">
             Contact us
           </button>
-          <button className="bg-[#002BFF] px-4 py-2 text-sm text-white hover:bg-[#0022cc] transition-colors tracking-[0.05em]">
+          <button className="bg-black border-y border-r border-white/20 px-4 py-2 text-sm text-white hover:bg-white/10 transition-colors tracking-[0.05em]">
             Login
           </button>
-          <button className="bg-[#002BFF] px-4 py-2 text-sm text-white hover:bg-[#0022cc] transition-colors tracking-[0.05em]">
+          <button className="bg-[#002BFF] border border-[#002BFF] px-4 py-2 text-sm text-white hover:bg-[#0022cc] transition-colors tracking-[0.05em]">
             Sign up
           </button>
         </div>
@@ -71,10 +71,31 @@ export default function Home() {
         </div>
 
         <div className="mt-12 flex items-center gap-3">
-          <button className="bg-black rounded-full px-9 py-4 text-[22px] text-white transition-all hover:scale-105 tracking-[0.05em]" style={{ fontFamily: "var(--font-space-grotesk)", fontWeight: 400 }}>
-            Get started
-          </button>
-          <button className="bg-black border-[2.2px] border-white rounded-full px-9 py-4 text-[22px] text-white transition-colors hover:bg-white/10 tracking-[0.05em]" style={{ fontFamily: "var(--font-space-grotesk)", fontWeight: 400 }}>
+          <div className="group relative p-[2px] rounded-full bg-gradient-to-r from-[#FF00FF] via-[#8000FF] to-[#002BFF]">
+            <button 
+              className="relative flex items-center justify-center bg-black rounded-full text-white transition-all hover:bg-black/90 tracking-[0.05em]"
+              style={{ 
+                fontFamily: "var(--font-space-grotesk)", 
+                fontWeight: 400,
+                width: '156px',
+                height: '64px',
+                fontSize: '22px'
+              }}
+            >
+              Get started
+            </button>
+          </div>
+
+          <button 
+            className="bg-black border-[2.2px] border-white rounded-full text-white transition-colors hover:bg-white/10 tracking-[0.05em] flex items-center justify-center"
+            style={{ 
+              fontFamily: "var(--font-space-grotesk)", 
+              fontWeight: 400,
+              width: '156px',
+              height: '64px',
+              fontSize: '22px'
+            }}
+          >
             Contact us
           </button>
         </div>
