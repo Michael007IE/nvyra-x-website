@@ -6,47 +6,28 @@ import { Github, Apple } from "lucide-react";
 import { useState } from "react";
 import { supabase } from "@/lib/supabase";
 
-export default function SignupPage() {
+export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const validatePassword = (pwd: string) => {
-    const minLength = pwd.length >= 12;
-    const hasCapital = /[A-Z]/.test(pwd);
-    const hasSpecial = /[!@#$%^&*(),.?":{}|<>]/.test(pwd);
-    
-    if (!minLength) return "Password must be at least 12 characters long";
-    if (!hasCapital) return "Password must contain at least one capital letter";
-    if (!hasSpecial) return "Password must contain at least one special character";
-    
-    return null;
-  };
-
-  const handleSignup = async (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
-
-    const validationError = validatePassword(password);
-    if (validationError) {
-      setError(validationError);
-      return;
-    }
-
     setLoading(true);
 
     try {
-      const { data, error: signUpError } = await supabase.auth.signUp({
+      const { data, error: signInError } = await supabase.auth.signInWithPassword({
         email,
         password,
       });
 
-      if (signUpError) throw signUpError;
+      if (signInError) throw signInError;
 
       window.location.href = "/";
     } catch (err: any) {
-      setError(err.message || "Failed to sign up");
+      setError(err.message || "Failed to log in");
     } finally {
       setLoading(false);
     }
@@ -63,7 +44,7 @@ export default function SignupPage() {
 
       if (error) throw error;
     } catch (err: any) {
-      setError(err.message || `Failed to sign up with ${provider}`);
+      setError(err.message || `Failed to log in with ${provider}`);
     }
   };
 
@@ -90,11 +71,11 @@ export default function SignupPage() {
             <span className="text-2xl font-medium text-white tracking-[0.05em]">Nvyra X</span>
           </div>
           <p className="text-xs text-center text-white/70 max-w-[280px] leading-relaxed">
-            Industry leading Disinformation and Deepfake Detection on the login page
+            Industry leading Disinformation and Deepfake Detection
           </p>
         </div>
 
-        <form onSubmit={handleSignup} className="space-y-4">
+        <form onSubmit={handleLogin} className="space-y-4">
           {error && (
             <div className="bg-red-500/10 border border-red-500/30 rounded-lg px-4 py-2 text-red-400 text-sm">
               {error}
@@ -123,9 +104,6 @@ export default function SignupPage() {
               required
               className="w-full bg-black/50 border border-white/20 rounded-lg px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#002BFF] transition-colors"
             />
-            <p className="text-xs text-white/40 ml-1 mt-1">
-              12+ characters, 1 capital letter, 1 special character
-            </p>
           </div>
 
           <button 
@@ -133,15 +111,15 @@ export default function SignupPage() {
             disabled={loading}
             className="w-full bg-[#002BFF] hover:bg-[#0022cc] text-white font-medium py-3 rounded-lg transition-colors mt-2 tracking-wide disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {loading ? "Signing up..." : "Sign up"}
+            {loading ? "Logging in..." : "Log in"}
           </button>
         </form>
 
         <div className="mt-6 text-center">
           <p className="text-sm text-white/60">
-            Already have an account?{" "}
-            <Link href="/login" className="text-[#002BFF] hover:underline">
-              Log in here
+            Don&apos;t have an account?{" "}
+            <Link href="/signup" className="text-[#002BFF] hover:underline">
+              Sign up here
             </Link>
           </p>
         </div>
