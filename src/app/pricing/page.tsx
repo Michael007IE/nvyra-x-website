@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Check, Zap, Diamond, CircleDashed, Sparkles } from "lucide-react";
+import { Check } from "lucide-react";
 
 export default function PricingPage() {
   return (
@@ -10,7 +10,7 @@ export default function PricingPage() {
       {/* Background Effect - Blue Nebula */}
       <div className="absolute top-0 left-0 right-0 h-[800px] z-0 pointer-events-none">
         <Image
-          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/image-1765571908582.png?width=8000&height=8000&resize=contain"
+          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/image-1765572702681.png?width=8000&height=8000&resize=contain"
           alt="Pricing Background"
           fill
           className="object-cover object-top opacity-100"
@@ -88,8 +88,14 @@ export default function PricingPage() {
           {/* Standard Card */}
           <div className="flex flex-col h-full group">
             <div className="mb-8">
-              <div className="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center mb-8 bg-black">
-                <CircleDashed className="w-7 h-7 text-white" strokeWidth={1.5} />
+              <div className="mb-8">
+                <Image 
+                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/image-1765572511377.png?width=8000&height=8000&resize=contain"
+                  alt="Standard"
+                  width={56}
+                  height={56}
+                  className="object-contain"
+                />
               </div>
               <h2 className="text-4xl font-normal mb-6 font-[family-name:var(--font-jost)]">Standard</h2>
               <p className="text-white/70 text-[18.2px] font-[family-name:var(--font-geist)] leading-relaxed h-20 font-normal">
@@ -115,7 +121,7 @@ export default function PricingPage() {
               </div>
             </div>
 
-            <button className="w-[204px] h-[48px] rounded-full bg-white/10 shadow-[inset_4.5px_5.7px_6.8px_rgba(255,255,255,0.4)] flex items-center justify-center transition-all text-[16.98px] font-normal font-[family-name:var(--font-geist)] text-white mx-auto md:mx-0 mt-auto hover:bg-white/20">
+            <button className="w-[203.81px] h-[47.56px] rounded-[113.229px] bg-white/10 shadow-[inset_4.52915px_5.66144px_6.79373px_rgba(255,255,255,0.4)] flex items-center justify-center transition-all text-[16.98px] font-normal font-[family-name:var(--font-geist)] text-white mx-auto md:mx-0 mt-auto hover:bg-white/20">
               Get started
             </button>
           </div>
@@ -123,15 +129,24 @@ export default function PricingPage() {
           {/* Pro Card */}
           <div className="flex flex-col h-full relative group">
             <div className="absolute top-[-10px] right-0">
-              <div className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/20 bg-[#1A1A1A] backdrop-blur-sm">
-                <Sparkles className="w-3.5 h-3.5 fill-white text-white" />
-                <span className="text-xs font-medium uppercase tracking-wide">Popular</span>
-              </div>
+              <Image 
+                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/image-1765572564865.png?width=8000&height=8000&resize=contain"
+                alt="Popular"
+                width={80} 
+                height={30}
+                className="object-contain"
+              />
             </div>
 
             <div className="mb-8">
-              <div className="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center mb-8 bg-black">
-                <Zap className="w-7 h-7 text-white" strokeWidth={1.5} />
+              <div className="mb-8">
+                <Image 
+                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/image-1765572483031.png?width=8000&height=8000&resize=contain"
+                  alt="Pro"
+                  width={56}
+                  height={56}
+                  className="object-contain"
+                />
               </div>
               <h2 className="text-4xl font-normal mb-6 font-[family-name:var(--font-jost)]">Pro</h2>
               <p className="text-white/70 text-[18.2px] font-[family-name:var(--font-geist)] leading-relaxed h-20 font-normal">
@@ -161,7 +176,7 @@ export default function PricingPage() {
               </div>
             </div>
 
-            <button className="w-[204px] h-[48px] rounded-full bg-white/10 shadow-[inset_4.5px_5.7px_6.8px_rgba(255,255,255,0.4)] flex items-center justify-center transition-all text-[16.98px] font-normal font-[family-name:var(--font-geist)] text-white mx-auto md:mx-0 mt-auto hover:bg-white/20">
+            <button className="w-[203.81px] h-[47.56px] rounded-[113.229px] bg-white/10 shadow-[inset_4.52915px_5.66144px_6.79373px_rgba(255,255,255,0.4)] flex items-center justify-center transition-all text-[16.98px] font-normal font-[family-name:var(--font-geist)] text-white mx-auto md:mx-0 mt-auto hover:bg-white/20">
               Get started
             </button>
           </div>
@@ -169,8 +184,14 @@ export default function PricingPage() {
           {/* Ultra Card */}
           <div className="flex flex-col h-full group">
             <div className="mb-8">
-              <div className="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center mb-8 bg-black">
-                <Diamond className="w-7 h-7 text-white" strokeWidth={1.5} />
+              <div className="mb-8">
+                <Image 
+                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/image-1765572537972.png?width=8000&height=8000&resize=contain"
+                  alt="Ultra"
+                  width={56}
+                  height={56}
+                  className="object-contain"
+                />
               </div>
               <h2 className="text-4xl font-normal mb-6 font-[family-name:var(--font-jost)]">Ultra</h2>
               <p className="text-white/70 text-[18.2px] font-[family-name:var(--font-geist)] leading-relaxed h-20 font-normal">
@@ -208,7 +229,7 @@ export default function PricingPage() {
               </div>
             </div>
 
-            <button className="w-[204px] h-[48px] rounded-full bg-white/10 shadow-[inset_4.5px_5.7px_6.8px_rgba(255,255,255,0.4)] flex items-center justify-center transition-all text-[16.98px] font-normal font-[family-name:var(--font-geist)] text-white mx-auto md:mx-0 mt-auto hover:bg-white/20">
+            <button className="w-[203.81px] h-[47.56px] rounded-[113.229px] bg-white/10 shadow-[inset_4.52915px_5.66144px_6.79373px_rgba(255,255,255,0.4)] flex items-center justify-center transition-all text-[16.98px] font-normal font-[family-name:var(--font-geist)] text-white mx-auto md:mx-0 mt-auto hover:bg-white/20">
               Get started
             </button>
           </div>
