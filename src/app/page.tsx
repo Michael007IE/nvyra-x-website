@@ -38,7 +38,7 @@ export default function Home() {
           <Link href="#" className="text-[#FFFEFE]/90 text-[20px] font-normal hover:opacity-80 transition-opacity">
             Sustainability
           </Link>
-          <Link href="#" className="text-[#FFFEFE]/90 text-[20px] font-normal hover:opacity-80 transition-opacity">
+          <Link href="/pricing" className="text-[#FFFEFE]/90 text-[20px] font-normal hover:opacity-80 transition-opacity">
             Pricing
           </Link>
           <Link href="#" className="text-[#FFFEFE]/90 text-[20px] font-normal hover:opacity-80 transition-opacity">
