@@ -2,8 +2,6 @@
 
 import { 
   SiNvidia,
-  SiWorkday,
-  SiMicrosoft,
   SiOpenai,
   SiAsana
 } from "react-icons/si";
@@ -11,9 +9,9 @@ import Image from "next/image";
 
 const logos = [
   { name: "NVIDIA", url: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/image-1765619108017.png" },
-  { name: "Workday", Icon: SiWorkday },
+  { name: "Workday", url: "https://upload.wikimedia.org/wikipedia/commons/2/20/Workday_logo.svg" },
   { name: "L'Oreal", url: "https://upload.wikimedia.org/wikipedia/commons/9/9c/L%27Or%C3%A9al_logo.svg" },
-  { name: "Microsoft", Icon: SiMicrosoft },
+  { name: "Microsoft", url: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" },
   { name: "OpenAI", Icon: SiOpenai, spinning: true },
   { name: "Cohere", url: "https://asset.brandfetch.io/idA-3cy22V/id8R3IVcIe.svg" },
   { name: "Asana", Icon: SiAsana },
