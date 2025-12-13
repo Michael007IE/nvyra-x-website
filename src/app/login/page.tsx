@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { createClient } from '@/lib/supabase/client'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { Hexagon, Loader2 } from 'lucide-react'
+import { Loader2 } from 'lucide-react'
 
 export default function LoginPage() {
   const [email, setEmail] = useState('')
@@ -36,8 +36,7 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-4 font-sans">
       <Link href="/" className="absolute top-8 left-8 flex items-center gap-2 text-white/80 hover:text-white transition-colors">
-        <Hexagon className="h-6 w-6 text-blue-500 stroke-[1.5]" />
-        <span className="text-lg font-medium">Nvyra X</span>
+        <span className="text-xl font-bold tracking-tight">Nvyra <span className="text-blue-500">X</span></span>
       </Link>
       
       <div className="w-full max-w-md space-y-8">

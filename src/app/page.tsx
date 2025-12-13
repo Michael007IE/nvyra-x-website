@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Hexagon } from "lucide-react";
 
 export default function Home() {
   return (
@@ -21,11 +20,9 @@ export default function Home() {
       {/* Navbar */}
       <header className="relative z-50 flex items-center justify-between px-6 py-6 md:px-12 max-w-7xl mx-auto w-full">
         <div className="flex items-center gap-2">
-          <div className="relative">
-            <Hexagon className="h-8 w-8 text-blue-600 fill-blue-600/20 stroke-[1.5]" />
-            <div className="absolute inset-0 blur-sm bg-blue-500/30 rounded-full" />
-          </div>
-          <span className="text-2xl font-bold tracking-tight text-white">Nvyra <span className="text-blue-500">X</span></span>
+          <Link href="/" className="text-2xl font-bold tracking-tight text-white hover:opacity-90 transition-opacity">
+            Nvyra <span className="text-blue-500">X</span>
+          </Link>
         </div>
 
         <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-300">
@@ -44,8 +41,8 @@ export default function Home() {
         </nav>
 
         <div className="flex items-center gap-6">
-          <Link href="#" className="text-sm font-medium text-gray-300 hover:text-white hidden sm:block border border-transparent hover:border-white/20 px-4 py-2 rounded-full transition-all">Contact us</Link>
-          <Link href="/login" className="text-sm font-medium text-gray-300 hover:text-white hidden sm:block">Login</Link>
+          <Link href="#" className="text-sm font-medium text-gray-300 hover:text-white border border-transparent hover:border-white/20 px-4 py-2 rounded-full transition-all">Contact us</Link>
+          <Link href="/login" className="text-sm font-medium text-gray-300 hover:text-white">Login</Link>
           <Link
             href="/signup"
             className="rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-2.5 text-sm font-medium text-white hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
@@ -56,14 +53,14 @@ export default function Home() {
       </header>
 
       {/* Hero Content */}
-      <main className="relative z-10 flex flex-col items-center justify-center pt-32 px-4 text-center min-h-[80vh]">
-        <h1 className="max-w-6xl text-6xl md:text-8xl lg:text-9xl font-semibold tracking-tighter leading-[1] mb-12 drop-shadow-2xl">
+      <main className="relative z-10 flex flex-col items-center justify-center pt-20 px-4 text-center min-h-[70vh]">
+        <h1 className="max-w-6xl text-5xl md:text-7xl font-semibold tracking-tighter leading-[1.1] mb-12 drop-shadow-2xl">
           The AI infrastructure that brings <br />
           <span className="italic font-light text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">clarity</span> to complexity.
         </h1>
 
-        <div className="flex flex-col sm:flex-row gap-6 mt-8">
-          <button className="rounded-full bg-white text-black px-12 py-4 text-lg font-bold hover:bg-gray-100 transition-all hover:scale-105 active:scale-95 shadow-xl shadow-white/10">
+        <div className="flex flex-col sm:flex-row gap-6 mt-4">
+          <button className="rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 px-12 py-4 text-lg font-bold text-white hover:shadow-lg hover:shadow-blue-500/25 transition-all hover:scale-105 active:scale-95">
             Get started
           </button>
           <button className="rounded-full border border-white/20 bg-white/5 backdrop-blur-sm px-12 py-4 text-lg font-medium text-white hover:bg-white/10 transition-all hover:scale-105 active:scale-95">
