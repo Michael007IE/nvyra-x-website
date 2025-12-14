@@ -1,35 +1,17 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function BrandLogo() {
   return (
     <div className="relative w-[401px] h-[84px] flex items-center px-[35px] py-[3px]">
-      {/* Polygon Container - Relative to the 401px wide container */}
+      {/* Logo Image */}
       <div className="relative w-[75.2px] h-[69.62px] flex-none">
-        {/* Polygon 6 */}
-        <div 
-          className="absolute bg-black border border-[#325FC2]"
-          style={{
-            width: '63.06px',
-            height: '55.18px',
-            left: '35px', 
-            bottom: '21.63px',
-            borderWidth: '1.08732px',
-            transform: 'rotate(15deg)',
-            zIndex: 1
-          }}
-        />
-        
-        {/* Polygon 5 */}
-        <div 
-          className="absolute bg-black border border-white"
-          style={{
-            width: '54.64px',
-            height: '53.55px',
-            left: '45.33px', 
-            top: '15.07px',
-            borderWidth: '0.543661px',
-            zIndex: 2
-          }}
+        <Image
+          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/image-1765699752917.png?width=8000&height=8000&resize=contain"
+          alt="Nvyra X Logo"
+          fill
+          className="object-contain"
+          priority
         />
       </div>
 
