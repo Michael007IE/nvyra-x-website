@@ -49,7 +49,7 @@ export default function Home() {
           </nav>
 
           {/* Auth Buttons Group */}
-          <div className="flex items-center gap-[7.95px] relative" style={{ width: '240px', height: '38.94px' }}>
+          <div className="flex items-center relative" style={{ width: '240px', height: '38.94px' }}>
             {/* Contact Us */}
             <Link 
               href="#" 
