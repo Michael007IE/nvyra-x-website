@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { Progress } from "@/components/ui/progress";
 // Using only safe icons or text if icons fail
 // import { Upload, FileImage, Loader2, AlertCircle, CheckCircle2 } from "lucide-react"; 
 
@@ -236,7 +237,7 @@ export default function ImageDetectorPage() {
             </div>
 
             <div className="mt-8 text-center relative z-10">
-                <p className="text-xs text-neutral-600">This AI is in beta testing. Please do not take outputs as fully the truth.</p>
+                <p className="text-xs text-neutral-600">This AI is in beta testing. Please do not take outputs as the definite truth.</p>
             </div>
         </div>
     );

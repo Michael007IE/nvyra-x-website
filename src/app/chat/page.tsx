@@ -41,7 +41,7 @@ export default function ChatPage() {
         setProgress(0);
 
         // Simulate 25s progress
-        const duration = 25000; // 25 seconds
+        const duration = 75000; // 75 seconds
         const intervalTime = 100;
         const steps = duration / intervalTime;
         const increment = 100 / steps;
@@ -234,7 +234,7 @@ export default function ChatPage() {
                     </div>
                     <div className="text-center mt-2 space-y-2">
                         <p className="text-xs text-neutral-600">Press <kbd className="font-mono text-neutral-500">Enter</kbd> to send, <kbd className="font-mono text-neutral-500">Shift + Enter</kbd> for new line</p>
-                        <p className="text-xs text-neutral-600">This AI is in beta testing. Please do not take outputs as fully the truth.</p>
+                        <p className="text-xs text-neutral-600">This AI is in beta testing. Please do not take outputs as the definite truth.</p>
                     </div>
                 </div>
             </footer>
