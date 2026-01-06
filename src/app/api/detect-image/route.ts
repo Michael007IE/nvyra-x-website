@@ -12,7 +12,7 @@ export async function POST(req: NextRequest) {
         }
 
         // Modal endpoint - using the new one provided by the user
-        const modalUrl = "https://ashkan-samali2--ai-image-detector-ensemble-fastapi-app.modal.run";
+        const modalUrl = "https://ashkan-samali2--ai-image-detector-ensemble-fastapi-app.modal.run/detect";
 
         const backendFormData = new FormData();
         backendFormData.append('file', file);
