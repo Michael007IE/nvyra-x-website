@@ -78,7 +78,7 @@ export default function Navbar() {
                     {/* Auth Buttons Group - Compact on tablet */}
                     <div className="flex items-center gap-2">
                         <Link
-                            href="#"
+                            href="mailto:support@nvyra-x.com"
                             className="hidden lg:flex items-center justify-center border border-[#565656] hover:bg-white/10 transition-colors px-4 h-[39px]"
                         >
                             <span className="font-sans text-[16px] text-white">Contact us</span>
@@ -142,7 +142,7 @@ export default function Navbar() {
 
                     <div className="flex flex-col gap-4 w-full max-w-xs px-8">
                         <Link
-                            href="#"
+                            href="mailto:support@nvyra-x.com"
                             onClick={() => setIsMobileMenuOpen(false)}
                             className="flex items-center justify-center w-full border border-white/20 py-3 text-white hover:bg-white/10 transition-colors rounded-full"
                         >
